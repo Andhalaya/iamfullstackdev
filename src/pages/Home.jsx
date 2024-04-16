@@ -1,4 +1,5 @@
 import {Link} from 'react-router-dom'
+import InputCreate from '../components/InputCreate';
 const Home = ({data}) => {
   return (
     <>
@@ -10,6 +11,7 @@ const Home = ({data}) => {
         </li>
       ))}
     </ul>
+    <InputCreate />
     </>
   )
 };

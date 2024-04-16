@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import Home from './Home.jsx'
-import ItemDetailPage from "./ItemDetailPage.jsx";
+import Home from './pages/Home.jsx'
+import ItemDetailPage from "./pages/ItemDetailPage.jsx";
 
 const App = () => {
   const [data, setData] = useState(null)
-  const urlApi = 'http://localhost:3000'
+  const urlApi = 'http://localhost:8020/tasks'
 
 const fetchData = async () => {
   try {
